@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kellogg Forest</title>
+        <meta charset='utf-8' />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+
+        <link rel="stylesheet" href="resources/leaflet.legend.css"/>
+        <script src="resources/leaflet.legend.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <script src="resources/leaflet-side-by-side.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="..." crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="resources/TreeHeights2.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <img src="resources/final.png" style="margin-right: 10px;">
+                <h1>Kellogg Island's Forest</h1>
+                <img src="resources/final2.png" style="margin-left: 10px; margin-bottom: 10px">
+            </div>
+            <div id = "button">
+                <button id="toggle-description"><i class="fa-solid fa-circle-info"></i></button>
+            </div>
+            <div id="description">
+                <p>The ability to remotely assess forest characteristics is invaluable to forestry professionals, conservationists, and land managers alike. Lidar, which represents a substantial breakthrough in remote sensing, has become one of the most prevalent tools in the field. How might this technology be used for an analysis at the scale of a single tree? This project incorporates data obtained from a 2021 lidar survey of King County, WA, coupled with high resolution aerial imagery, to reveal meaningful information about the trees of Kellogg Island. ESRI's deep learning tree identification model was first used to identify each tree on the island. These were then intersected with a lidar-derived canopy height model to reveal the heights of each individual tree. Canopy density was calculated from the proportion of above-ground lidar returns to total returns and is shown in relation to the trees and their heights. It is immediately apparent that shorter trees are more tightly clustered than their tallest counterparts. Interestingly, the densest canopies don't necessarily coincide with the tallest trees, perhaps because the largest trees shade out their competition, reducing the density of foliage in the understory. However, this may also be a result of the deep learning object identification, which, unlike lidar, cannot penetrate imagery to guess what might be underneath the canopy.</p>
+            </div>
+            <div id='map'></div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

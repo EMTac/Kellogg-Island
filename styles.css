@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #title {
+    position: relative;
+    height: 5%;
+    background-color: #63146F;
+    font-size: 18px;
+    font-family: Arial;
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #button button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  #button {
+    height: 5%;
+    position: absolute;
+    padding-right: 1%;
+    padding-left: 1%;
+    right: 0;
+    font-size: 28px;
+    color: #63146F;
+    background-color: #ffe2ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #description {
+    height: auto;
+    overflow: auto;
+    overflow-y: scroll;
+    display: block;
+    transition: height 0.5s ease;
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 1.6;
+    color:#63146F;
+    background-color: #ffe2ac;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  #description p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  /* #separator {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 50%;
+    width: 5px;
+    background-color: #63146F;
+  }
+
+  #left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #63146F;
+  }
+  
+  #right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #63146F;
+  }
+
+  #description h2 {
+    display: block;
+  }
+
+  #description p {
+    display: block;
+  } */
+
+  #map {
+    height: 95%;
+  }
+
+  .renderClass {
+    image-rendering: pixelated
+  }
+
+  .leaflet-legend-title {
+    color: #fff;
+  }
+
+  .leaflet-legend-item span{
+    color: rgb(255, 255, 255);
+  }
+
+  .leaflet-legend-item img{
+    width: auto;
+    height: 170%;
+    margin-top: 30px;
+    margin-left: 120px;
+  }
+  
